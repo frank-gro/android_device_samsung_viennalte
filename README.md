@@ -19,22 +19,22 @@ Copyright (C) 2017 Valera Chigir <valera1978@tut.by>
 
   - Make a workspace
 
-mkdir cm17
-cd cm17
+mkdir lineage-17
+cd lineage-17
 
   - Do repo init & sync
 
-repo init -u git://github.com/LineageOS/android.git -b cm-17.0
+repo init -u git://github.com/LineageOS/android.git -b lineage-17.1
 
   - Create .repo/local_manifests/roomservice.xml with the following content:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="Valera1978/android_device_samsung_viennalte" path="device/samsung/viennalte" remote="github" />
-  <project name="Valera1978/android_kernel_samsung_msm8974" path="kernel/samsung/msm8974" remote="github" />
-  <project name="Valera1978/android_vendor_samsung_viennalte" path="vendor/samsung/viennalte" remote="github" />
-  <project name="Valera1978/android_hardware_samsung" path="hardware/samsung" remote="github" />
+  <project name="frank-gro/android_device_samsung_viennalte" path="device/samsung/viennalte" remote="github" />
+  <project name="frank-gro/android_kernel_samsung_msm8974" path="kernel/samsung/msm8974" remote="github" />
+  <project name="frank-gro/android_vendor_samsung_viennalte" path="vendor/samsung/viennalte" remote="github" />
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" />
 </manifest>
 ```
 
